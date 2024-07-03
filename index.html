@@ -1,0 +1,405 @@
+<html>
+<head>
+   <title> Age Calculator</title>
+    <style>
+
+
+    .formstyle{
+        width:100%;
+        height: 100%;
+    
+    
+        background-color: #fddeac;
+        position: fixed;
+        
+
+
+    }
+    #hello120{
+        
+    height:30%;
+    width:100%;
+         margin-top: 68%;
+     border-radius: 20px;
+     border:2px solid black;
+        background-color:#a0e7fc;
+        
+    }
+    
+    #hello120:hover{
+        margin-top:68%;
+        width:100%;
+        height: 30%;
+        border: 2px dotted black;
+         cursor: pointer;
+      font-size: 20px;
+      font-weight: 900;
+        background-color: #11a3cf;
+        
+    }
+.main{
+        width:480px;
+        height: 310px;
+      border: 2px solid black;
+        margin:auto;
+        border-radius: 8px;
+        background-color:#a0e7fc;
+        display: flex;
+         justify-content: center;
+
+         margin-top:4%;
+         
+         
+        
+
+
+    }
+    .submain{
+    
+    
+        margin-left: 0px;
+        position: fixed;
+        
+
+
+    }
+    #A100{
+        margin-left: 3.5%;
+        height:24%;
+        width:90%;
+        font-size: 20px;
+               font-weight: 700;
+    }
+        #A101{
+               margin-left:3.5%;
+               font-size: 20px;
+               font-weight: 700;
+               height:24%;
+               width:90%;
+               margin-top: 10px;
+    }
+        #A102{
+                margin-left: 3.5%;
+                height:24%;
+                width:90%;
+                margin-top: 13px;
+                font-size: 20px;
+               font-weight: 700;
+
+    }
+        #A104{
+        height:8%;
+        width:40%;
+        border: 3px solid red;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-left: 2px;
+        font-size: 12px;
+        font-weight: 900;
+
+    }
+    #A104:hover{
+        height:12%;
+        width:40%;
+        border: 3px solid rgb(206, 243, 39);
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+
+    #A105 
+    {
+        height:8%;
+        width:40%;
+        border: 3px solid red;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: 900;
+
+    }
+    #A105:hover 
+    {
+        height:12%;
+        width:50%;
+        border: 5px solid rgb(206, 243, 39);
+        border-radius: 15px;
+        cursor: pointer;
+        margin-left: 8px;
+        font-size: 20px;
+        font-weight: 900;
+        cursor: pointer;
+
+    }
+    
+    p{
+        color: blue;
+        font-size: 24px;
+        font-family: cursive;
+    }
+    #A1000{
+        color:black;
+        font-size: 20px;
+        font-weight: 900;
+        font-style: inherit;
+        margin-left: 5px;
+        min-height: 0px;
+        max-height:160px;
+        max-width: 580px;
+        min-width: 480px;
+        margin-top: 68%;
+        
+        border-radius: 20px;
+        background-color:#a0e7fc;
+
+    }
+    #A1000:hover{
+        color:red;
+        font-size: 20px;
+        font-weight: 900;
+        font-style: inherit;
+        margin-left: 5px;
+        min-height: 80px;
+        max-height:160px;
+        max-width: 580px;
+        min-width: 480px;
+        margin-top: 68%;
+        
+    
+        background-color:#82fb9b;
+
+
+    }
+#B100{
+    height:130px;
+    width:80px;
+    display: inline-block;
+    
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+#B101{
+    height:130px;
+    width:150px;
+    display: inline-block;
+
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+#B99{
+    display: flex;
+}
+#B103{
+    height:350px;
+    width:300px;
+}
+#heading:hover{
+    font-style:oblique;
+    color:red;
+}
+
+
+        
+
+        </style>
+    </head>
+    <body>
+
+    
+
+
+
+        <div class="formstyle">
+
+            <div class="Main">
+                <div class="submain">
+                    <br>
+                    
+                   <h2 id="heading">Please Enter DOB...</h2>
+        
+        
+       <div id="B99">
+        <div id="B100">
+        <lable id="heading" for="date"> Date::</lable><br><br>
+        <lable  id="heading" for="month" > Month::</lable><br><br>
+        <lable id="heading" for="year" >Year::</lable>
+        </div>
+
+
+        <div id="form_container">
+            <form id = "myForm" action = "#">
+        <div id="B101">
+        
+        <input type="number"value="" id="A100" min="0" max="31">
+        <input type="number" value="" id="A101"  min="1" max="12"><br>
+       
+        <input type="number" value="" id="A102" minlength="4"  maxlength="4"  pattern="\d{4}" ><br>
+    
+    </div>
+
+    
+        <br>
+        <div id="B103">
+         <input type="submit"  id="A104" value="Submit"  onclick="myFunction()">
+         <input type="reset" value="Reset" id="A105" onclick="reset()" ><br>
+        </div>
+     </form>
+     </div>
+        </div>
+</div>
+    
+        
+    
+    <div id="hello12">
+        
+        <p id="A1000"></p>
+    
+    
+    </div>
+    
+    
+<script>
+
+let date= new Date();
+let mon=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+let arr31=[1,3,5,7,8,10,12];
+let arr30 =[4,6,9,11];
+var dt2=0;
+
+const currentmonth=date.getMonth();
+const curruntdate=date.getDate();
+const Currentyear=date.getFullYear();
+const currmonth=currentmonth+1;
+
+function reset()
+{
+    document.getElementById("myForm").reset();
+
+}
+
+
+    function myFunction()
+    {
+        const DobDate=document.getElementById("A100").value;
+        const DobMonth=document.getElementById("A101").value;
+        const DobYear=document.getElementById("A102").value;
+        var day=0;
+       
+       
+      if(DobDate=='' || DobMonth==''|| DobYear=='')
+       {
+        alert("plz Enter All Value");
+        
+       }
+
+       else{
+
+       
+        if(DobMonth==2)
+        {
+              if(DobYear%400==0)
+               {
+                 day=(29-DobDate+1)+curruntdate;
+               }
+              else
+               {
+                 day=(28-DobDate+1)+curruntdate;
+                }
+         }
+
+        if(DobMonth!=2)
+        {
+            for(let i=0; i<7;i++ )
+             {
+                if(DobMonth== arr31[i])
+                {
+                    day=(31-DobDate+1)+curruntdate;
+                
+                }
+
+             }
+
+             for(let i=0; i<4;i++ )
+             {
+                if(DobMonth== arr30[i])
+                {
+                    day=(30-DobDate+1)+curruntdate; 
+                
+                }
+
+             }
+
+
+
+
+          }
+          }//
+    
+        
+        
+
+        
+        
+        
+        
+        let year=Currentyear-DobYear-1;
+        var month=12-DobMonth;
+        month +=  currentmonth;
+        var rem=0;
+       
+
+
+         
+
+        if(day>30)
+        {
+            rem1=Math.trunc(day/30);
+            month=month+rem1;
+            day=day-30;
+
+        }
+
+
+
+       if(month>12)
+        {
+            let mon=month;
+            rem=Math.trunc(mon/12);
+            year= year+rem;
+            month -= 12;
+        }
+
+        
+        
+
+         
+  
+    
+
+       
+        document.getElementById("A1000").innerHTML= "Now you are " + day + " "+" "+ "day" + " "+ month +" "+" "+  "Month"
+       + " "+ year + " "+ " " + "year" +" "+ "old!!";
+
+       console.log("Now you are " + day + " "+" "+ "day" + " "+ month +" "+" "+  "Month"
+       + " "+ year + " "+ " " + "year" +" "+ "old!!");
+       
+
+   }
+  
+
+    </script>
+
+
+
+
+    </div>
+    </body> 
+</html>
